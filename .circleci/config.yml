@@ -26,4 +26,4 @@ jobs:
             - vendor/bundle
       - run:
           name: Deploy
-          command: rsync -e "ssh -o StrictHostKeyChecking=no" -va --delete ./demo_rails lassuncao@167.99.226.237:~/deployments/demo-rails
+          command: rsync -e "ssh -o StrictHostKeyChecking=no" -va --delete . lassuncao@167.99.226.237:~/deployments/demo-rails
