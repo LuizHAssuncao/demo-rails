@@ -4,6 +4,8 @@ jobs:
     docker:
       - image: circleci/ruby:2.5.1
     working_directory: ~/_site_demo_rails
+    environment:
+      - NOKOGIRI_USE_SYSTEM_LIBRARIES=true
     steps:
       - checkout
       - run:
